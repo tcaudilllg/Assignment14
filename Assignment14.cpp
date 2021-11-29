@@ -3,9 +3,74 @@
 
 #include <iostream>
 
+#include "Vehicle.h"
+#include "Car.h"
+#include "Truck.h"
+
 int main()
 {
-    std::cout << "Hello World!\n";
+
+	// declarations/instantiations
+
+	Vehicle vehicle = Vehicle();
+	Car car = Car();
+	Truck truck = Truck();
+
+	string make = "";
+	int model;
+	int doorCount;
+	double towingCapacity;
+
+
+	cout << "Enter make of car: ";
+	cin >> make;
+	vehicle.setManufacturer(make);
+	cout << endl;
+
+	cout << "Enter model year of car: ";
+	cin >> model;
+	vehicle.setYear(model);
+	cout << endl;
+
+	cout << "Vehicle Info:" << endl;
+	vehicle.displayInfo();
+
+	cout << "Enter make of car: ";
+	cin >> make;
+	car.setManufacturer(make);
+	cout << endl;
+
+	cout << "Enter model year of car: ";
+	cin >> model;
+	car.setYear(model);
+	cout << endl;
+
+	cout << "How many doors does the car have? ";
+	cin >> doorCount;
+	car.setDoorCount(doorCount);
+
+	cout << "Vehicle Info:" << endl;
+	car.displayInfo();
+
+	cout << "Enter make of truck: ";
+	cin >> make;
+	truck.setManufacturer(make);
+	cout << endl;
+
+	cout << "Enter model year of truck: ";
+	cin >> model;
+	truck.setYear(model);
+	cout << endl;
+	 
+	cout << "Enter towing capacity of truck: ";
+	cin >> towingCapacity;
+	truck.setTowingCapacity(towingCapacity);
+
+	cout << "Vehicle Info:" << endl;
+	truck.displayInfo();
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

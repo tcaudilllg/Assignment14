@@ -1,4 +1,10 @@
-#pragma once
+#ifndef VEHICLE_H
+#define VEHICLE_H
+
+#include <iostream>
+using namespace std;
+
+
 class Vehicle
 {
 
@@ -12,11 +18,12 @@ private:
 public:
 
 	Vehicle();
-
+	Vehicle(string, int);
 	string getManufacturer();
 	void setManufacturer(string);
 	int getYear();
 	void setYear(int);
-
+	void displayInfo();
 };
 
+#endif

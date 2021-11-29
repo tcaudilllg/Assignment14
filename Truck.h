@@ -14,7 +14,8 @@ private:
 public:
 
     Truck();
+    Truck(string, int, double);
     double getTowingCapacity();
     void setTowingCapacity(double);
-
+    void displayInfo();
 };

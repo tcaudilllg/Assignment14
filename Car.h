@@ -1,5 +1,7 @@
 #pragma once
+
 #include "Vehicle.h"
+
 class Car :
     public Vehicle
 {
@@ -13,8 +15,9 @@ private:
 public:
 
     Car();
+    Car(string make, int model, int doors);
     int getDoorCount();
     void setDoorCount(int);
-
+    void displayInfo();
 };
 
