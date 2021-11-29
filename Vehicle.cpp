@@ -1,5 +1,24 @@
 #include "Vehicle.h"
 
+// Constructors
+
+Vehicle::Vehicle ()
+{
+	manufacturer = "";
+	year = 0;
+}
+
+// Constructors
+
+Vehicle::Vehicle(string make, int model)
+{
+	manufacturer = make;
+	year = model;
+}
+
+// Getters/setters
+
+
 string Vehicle::getManufacturer()
 {
 	return manufacturer;
@@ -20,6 +39,8 @@ void Vehicle::setYear(int model)
     year = model;
 
 }
+
+// behaviors
 
 void Vehicle::displayInfo()
 {
