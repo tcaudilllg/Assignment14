@@ -21,3 +21,8 @@ int Car::getDoorCount()
 	return doorCount;
 }
 
+void Car::displayInfo()
+{
+	Vehicle::displayInfo();
+	cout << "Doors : " << doorCount << endl;
+}

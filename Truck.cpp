@@ -20,3 +20,8 @@ double Truck::getTowingCapacity()
 	return towingCapacity;
 }
 
+void Truck::displayInfo()
+{
+	Vehicle::displayInfo();
+	cout << "Towing capacity: " << towingCapacity << endl;
+}
