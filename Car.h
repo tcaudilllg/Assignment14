@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CAR_H
+#define CAR_H
 
 #include "Vehicle.h"
 
@@ -21,3 +22,4 @@ public:
     void displayInfo();
 };
 
+#endif
