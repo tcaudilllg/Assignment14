@@ -1,5 +1,11 @@
+// Author: Anthony Caudill
+// 21.FA.CIS.1202.501
+// 11/29/2021
+
+
 // Assignment14.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+
 
 #include <iostream>
 
@@ -22,18 +28,20 @@ int main()
 	double towingCapacity;
 
 
-	cout << "Enter make of car: ";
+	cout << "Enter make of vehicle: ";
 	cin >> make;
 	vehicle.setManufacturer(make);
 	cout << endl;
 
-	cout << "Enter model year of car: ";
+	cout << "Enter model year of vehicle: ";
 	cin >> model;
 	vehicle.setYear(model);
 	cout << endl;
 
 	cout << "Vehicle Info:" << endl;
 	vehicle.displayInfo();
+
+	cout << endl;
 
 	cout << "Enter make of car: ";
 	cin >> make;
@@ -49,8 +57,12 @@ int main()
 	cin >> doorCount;
 	car.setDoorCount(doorCount);
 
-	cout << "Vehicle Info:" << endl;
+	cout << endl;
+
+	cout << "Car Info:" << endl;
 	car.displayInfo();
+
+	cout << endl;
 
 	cout << "Enter make of truck: ";
 	cin >> make;
@@ -66,10 +78,8 @@ int main()
 	cin >> towingCapacity;
 	truck.setTowingCapacity(towingCapacity);
 
-	cout << "Vehicle Info:" << endl;
+	cout << "Truck Info:" << endl;
 	truck.displayInfo();
-
-
 
 }
 
